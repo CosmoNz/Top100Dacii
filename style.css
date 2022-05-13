@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    font-family: 'Fredoka One', cursive;
+}
+
+.textDacii {
+    color:white;
+    font-size: 50px;
+}
+
+.dacieSpin {
+    width: 150px;
+    height: 150px;
+    margin:0px 60px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+}
+
+#div_picture_right {
+    display: block;
+}
